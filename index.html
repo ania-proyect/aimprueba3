@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AiM - Encuentra tu propósito</title>
   <!-- Estilos y fuentes -->
-   <style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roca+One&display=swap" rel="stylesheet">
+  <style>
     /* Estilo general */
     body {
       font-family: 'Roca One', sans-serif;
@@ -16,8 +18,8 @@
 
     header {
       background-color: white;
-      height: 1cm; /* Header con altura fija */
-      width: 100%; 
+      margin: 0; /* Elimina cualquier margen del header */
+      height: 5cm; /* Header con altura fija */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -32,7 +34,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1rem;
     }
 
     .nav-links {
@@ -40,6 +41,23 @@
       flex-grow: 1; /* Asegura que los botones ocupen el espacio disponible */
       justify-content: space-evenly; /* Distribuye equitativamente los botones */
       margin: 0;
+    }
+
+    /* Estilo para convertir los nav-links en botones */
+    .nav-links a {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #d63384;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .nav-links a:hover {
+      background-color: #c0ca33; /* Cambio de color al pasar el mouse */
     }
 
     .btn {
@@ -63,9 +81,8 @@
     }
 
     .hero img {
-      max-width: 55%;
+      max-width: 45%;
       border-radius: 15px;
-      justify-content: space-evenly;
     }
 
     .hero-content {
@@ -81,101 +98,6 @@
       font-size: 1.2rem;
       color: #4b2a63;
     }
-
-    /* Segunda sección */
-    .second-section {
-      padding: 2rem 0;
-      text-align: center;
-      background: linear-gradient(to right, #f8dde5, #e3c9f1);
-    }
-
-    .second-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .second-section .options {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 2rem;
-    }
-
-    .options div {
-      text-align: center;
-      max-width: 30%;
-    }
-
-    .options div img {
-      max-width: 100px;
-      margin-bottom: 1rem;
-    }
-
-    .options div h3 {
-      color: #4b2a63;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    /* Tercera sección */
-    .third-section {
-      padding: 2rem 0;
-      background: linear-gradient(to right, #f8dde5, #e3c9f1);
-    }
-
-    .third-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .third-section .creators {
-      margin-top: 2rem;
-    }
-
-    .third-section .creators p {
-      color: #4b2a63;
-      font-weight: bold;
-    }
-
-    .social-icons {
-      text-align: right;
-      margin-top: 2rem;
-    }
-
-    .social-icons a {
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: #4b2a63;
-    }
-
-    /* Última sección */
-    .newsletter-section {
-      background-color: #d63384;
-      text-align: center;
-      color: white;
-      padding: 2rem;
-    }
-
-    .newsletter-section h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-
-    .newsletter-section a {
-      background-color: #d4e157;
-      color: #333;
-      padding: 0.5rem 1rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      border-radius: 20px;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      padding: 1rem;
-    }
   </style>
 </head>
 <body>
@@ -184,7 +106,7 @@
     <nav>
       <!-- Logo en la izquierda -->
       <div>
-        <a href="index.html"><img src="logo.png" alt="AiM Logo" style="height: 35px;"></a>
+        <a href="index.html"><img src="logo.png" alt="AiM Logo" style="height: 40px;"></a>
       </div>
       <!-- Botones distribuidos equitativamente -->
       <ul class="nav-links">
@@ -203,7 +125,7 @@
   <!-- Primera sección -->
   <main class="hero">
     <div>
-      <img src="hero-image.png" alt="Mujeres sonriendo">
+      <img src="image.jpg" alt="Mujeres sonriendo">
     </div>
     <div class="hero-content">
       <h1>Encuentra tu propósito</h1>
