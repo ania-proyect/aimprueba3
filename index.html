@@ -8,13 +8,18 @@
   <style>
     /* Estilo general */
     body {
-      font-family: Aptos;
-      margin: 5em;
+      font-family: sans-serif;
+      margin: 0em;
       padding: 0 0rem; /* Márgenes laterales para toda la web excepto el header */
       background: linear-gradient(to right, #f8dde5, #e3c9f1);
       font-size: 0.9rem; /* Reducir el tamaño general de las fuentes en la web */
     }
-
+.container {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  width: 100%; /* Asegura que el contenido ocupe el 100% del ancho disponible */
+  margin: 0 auto; /* Centra horizontalmente el contenido */
+  padding: 0 2rem; /* Agrega algo de espacio interno a los lados */
+}
     header {
       background-color: white;
       height: 60px; /* Header con altura fija */
@@ -29,6 +34,7 @@
     }
 
     nav {
+      max-width:1200px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -45,7 +51,7 @@
 
     .nav-links a {
       display: inline-block;
-      font-family: Aptos;
+      font-family: sans-serif;
       background-color: white;
       color: #545454;
       padding: 0.5rem 1rem;
@@ -61,7 +67,7 @@
     }
 
     .btn {
-      font-family: Aptos;
+      font-family: sans-serif;
       background-color: #d63384;
       color: white;
       padding: 0.5rem 1rem;
@@ -190,7 +196,7 @@
       background-color: #d4e157;
       color: #333;
       padding: 0.5rem 1rem;
-      font-family: Aptos;
+      font-family: sans-serif;
       font-weight: bold;
       font-size: 0.9rem; /* Reducir el tamaño del texto del botón */
       border-radius: 20px;
