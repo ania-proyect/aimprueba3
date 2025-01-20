@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AiM - Encuentra tu propósito</title>
+  <!-- Integración de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roca+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    /* Estilo general */
+    body {
+      font-family: 'Roca One', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #4b2a63;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #d4e157;
+      color: #333;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #c0ca33;
+    }
+
+    /* Última sección */
+    .newsletter-section {
+      background-color: #d63384;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .newsletter-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-section .btn-newsletter {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #d4e157;
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    .newsletter-section .btn-newsletter:hover {
+      background-color: #c0ca33;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <a href="index.html"><img src="logo.png" alt="AiM Logo" style="height: 30px;"></a>
+      <div class="nav-links">
+        <a href="#">Programa AiM</a>
+        <a href="#">Recursos gratuitos</a>
+        <a href="#">Sobre nosotras</a>
+        <a href="#">Contáctanos</a>
+      </div>
+      <a href="#" class="btn">Iniciar Sesión | Crear cuenta</a>
+    </nav>
+  </header>
+
+  <!-- Primera sección (Hero) -->
+  <main class="hero">
+    <div>
+      <img src="hero-image.jpeg" alt="Mujeres sonrientes">
+    </div>
+    <div class="hero-content">
+      <h1>Encuentra tu propósito</h1>
+      <p>Descubre cuáles son los cimientos de tu vida y empieza a trabajar sobre ellos</p>
+      <a href="#" class="btn">Descúbrelo</a>
+    </div>
+  </main>
+
+  <!-- Segunda sección -->
+  <section class="second-section">
+    <h2>¿Necesitas ordenar tu vida y no sabes por dónde empezar?</h2>
+    <div class="options">
+      <div>
+        <img src="icon1.png" alt="Programa AiM">
+        <h3>Conoce nuestro método</h3>
+        <p>Descubre cómo el programa AiM puede ayudarte.</p>
+        <a href="#">Programa AiM</a>
+      </div>
+      <div>
+        <img src="icon2.png" alt="Recursos gratuitos">
+        <h3>Consulta nuestros recursos gratuitos</h3>
+        <p>Encuentra herramientas y guías prácticas.</p>
+        <a href="#">Recursos gratuitos</a>
+      </div>
+      <div>
+        <img src="icon3.png" alt="Sesión individualizada">
+        <h3>Sesión individualizada</h3>
+        <p>Conecta con nosotras para recibir orientación.</p>
+        <a href="#">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tercera sección -->
+  <section class="third-section">
+    <h2>Sobre Nosotras</h2>
+    <p>Aumenta la credibilidad de tu producto y servicio añadiendo testimonios de tu clientela.</p>
+    <div class="creators">
+      <p>Ania Claver, creadora</p>
+      <p>María Claver, creadora</p>
+    </div>
+    <div class="social-icons">
+      <span>Síguenos:</span>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Última sección (Newsletter) -->
+  <section class="newsletter-section">
+    <h2>¿Quieres recibir noticias y recursos interesantes?</h2>
+    <a href="#" class="btn-newsletter">Regístrate a nuestra Newsletter</a>
+    <footer>
+      <p>© 2025 AiM. Creado por mujeres para mujeres.</p>
+    </footer>
+  </section>
+</body>
+</html>
