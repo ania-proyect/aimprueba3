@@ -12,19 +12,20 @@
     body {
       font-family: 'Roca One', sans-serif;
       margin: 0;
-      padding: 0 2rem; /* Margen general para la web */
+      *padding: 0 2rem; / Márgenes laterales para toda la web excepto el header /*
       background: linear-gradient(to right, #f8dde5, #e3c9f1);
     }
 
     header {
       background-color: white;
-      height: 5cm;
+      *margin: 0; / Elimina cualquier margen del header /*
+      height: 5cm; /* Header con altura fija */
       position: sticky;
       top: 0;
       z-index: 1000;
       display: flex;
       align-items: center;
-      padding: 0 2rem; /* Margen interno para el header */
+      *padding: 0 2rem; / Espacio interno para separar elementos del borde /*
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
@@ -37,8 +38,8 @@
 
     .nav-links {
       display: flex;
-      flex-grow: 1;
-      justify-content: space-evenly; /* Distribuir equitativamente los botones */
+      *flex-grow: 1; / Asegura que los botones ocupen el espacio disponible /*
+      *justify-content: space-evenly; / Distribuye equitativamente los botones /*
       margin: 0;
     }
 
@@ -59,7 +60,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 2rem 0;
+      *padding: 2rem 0; / Margen vertical del contenido en la sección hero /*
     }
 
     .hero img {
@@ -107,7 +108,7 @@
   <!-- Primera sección -->
   <main class="hero">
     <div>
-      <img src="hero-image.png" alt="Mujeres sonriendo">
+      <img src="image.jpg" alt="Mujeres sonriendo">
     </div>
     <div class="hero-content">
       <h1>Encuentra tu propósito</h1>
